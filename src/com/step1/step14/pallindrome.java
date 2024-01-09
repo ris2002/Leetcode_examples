@@ -59,18 +59,17 @@ loop breaks as x=0/10=0
 
 
   }
-    ********************************************************************************************************************
-Mummy you have the check the below code
-  ********************************************************************************************************************
-similar code to upper one but slightly modified to fit the question whether the number is pallindrome or not
-    * import java.util.ArrayList;
+  &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+  The below problem is the solved problem in coding Ninjas
+    &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+import java.lang.Math;
 
 public class Solution {
-    public static boolean palindromeNumber(int n) {
+    public static boolean palindromeNumber(int n){
+        // Write your code here.
         int originalN = n;
-
         List<Integer> l1 = new ArrayList<>();
         List<Integer> l2 = new ArrayList<>();
 
@@ -88,12 +87,21 @@ public class Solution {
         }
 
         int reversedNumber = 0;
-        for (int j = 0; j < size; j++) {
+        for (int j = 0; j < size - 1; j++) {
+        ****
+        The main difference btw above code and below is this line 'j < size - 1'. it should be j<size as we are are interasting j through the
+        size not the other way around and to avoid index out of bounds error.
+
+
+
+
+        ****
             reversedNumber = l2.get(j) * (int) Math.pow(10, size - 1 - j) + reversedNumber;
         }
 
+        reversedNumber = reversedNumber + l1.get(0);
         return originalN == reversedNumber;
     }
-*/
-
 }
+
+     */
