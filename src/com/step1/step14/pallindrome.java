@@ -61,7 +61,7 @@ loop breaks as x=0/10=0
   }
   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
   The below problem is the solved problem in coding Ninjas
-    &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
     import java.util.ArrayList;
 import java.util.List;
 import java.lang.Math;
@@ -88,14 +88,11 @@ public class Solution {
 
         int reversedNumber = 0;
         for (int j = 0; j < size - 1; j++) {
-        ****
+       /****
         The main difference btw above code and below is this line 'j < size - 1'. it should be j<size as we are are interasting j through the
         size not the other way around and to avoid index out of bounds error.
 
-
-
-
-        ****
+        ****/
             reversedNumber = l2.get(j) * (int) Math.pow(10, size - 1 - j) + reversedNumber;
         }
 
@@ -104,4 +101,3 @@ public class Solution {
     }
 }
 
-     */
