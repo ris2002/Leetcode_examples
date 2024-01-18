@@ -74,7 +74,8 @@ public class Solution {
         List<Integer> l2 = new ArrayList<>();
 
         while (n > 0) {
-            int digit = n % 10;
+            int digit = n % 10;  // basically what happens here is if we do n%10 where ///
+
             l1.add(0, digit);
             n = n / 10;
         }
