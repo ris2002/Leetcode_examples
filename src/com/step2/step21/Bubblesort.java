@@ -1,6 +1,6 @@
 package com.step2.step21;
 
-public class Bubblesort {
+public class  Bubblesort {
     public static void bubbleSort(int[] arr, int n) {
         int x=n-1;
 
