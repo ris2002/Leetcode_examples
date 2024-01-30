@@ -5,7 +5,7 @@ public class Bubblesortreccursion {public static void bubbleSort(int[] arr, int 
 }
 
     public static void bs(int[] arr, int x) {
-        if (x != 0) {
+        if (x != 0) {//x is size of the array
             for (int i = 0; i < x - 1; i++) {
                 if (arr[i] > arr[i + 1]) {
                     swap(arr, i, i + 1);
