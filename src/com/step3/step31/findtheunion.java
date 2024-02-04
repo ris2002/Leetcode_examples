@@ -1,6 +1,6 @@
 package com.step3.step31;
 import java.util.*;
-public class findtheunion { {
+public class findtheunion { public static List<Integer> sortedArray(int[] a, int[] b) {
     int n = a.length;
     int m = b.length;
     ArrayList<Integer> c = new ArrayList<>();
