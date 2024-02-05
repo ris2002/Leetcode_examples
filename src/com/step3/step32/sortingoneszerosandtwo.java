@@ -1,4 +1,4 @@
-package com.step3.step31;
+package com.step3.step32;
 import java.util.* ;
 import java.io.*;
 public class sortingoneszerosandtwo {
