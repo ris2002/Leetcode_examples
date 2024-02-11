@@ -12,7 +12,8 @@ public class findtheunion { public static List<Integer> sortedArray(int[] a, int
     while (i < n && j < m) {
         if (a[i] < b[j]) {
             int x = a[i];
-            if (set.add(x)) {
+            if (set.add(x)) {//chks wheather the element is previously there or not
+
                 c.add(x);
             }
             i++;
