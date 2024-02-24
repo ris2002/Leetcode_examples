@@ -23,7 +23,7 @@ public class findtheunion { public static List<Integer> sortedArray(int[] a, int
                 c.add(x);
             }
             j++;
-        } else {
+        } else {//if a[i]==b[j]
             int x = a[i];
             if (set.add(x)) {
                 c.add(x);
