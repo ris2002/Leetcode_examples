@@ -1,5 +1,7 @@
 package com.step3.step33;
-
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 public class foursum
         public static List<List<Integer>> fourSum(int[] nums, int target) {
             List<List<Integer>> result = new ArrayList<>();
@@ -52,3 +54,4 @@ public class foursum
             List<List<Integer>> result = fourSum(nums, target);
             System.out.println(result);
         }
+}
